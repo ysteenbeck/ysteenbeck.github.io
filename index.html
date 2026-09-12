@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yannic Steenbeck — Research</title>
+  <meta name="description" content="Yannic Steenbeck, PhD student at TU Braunschweig, working on random systems with interactions at the interface of probability theory and analysis.">
+  <style>
+    :root {
+      --background: #f1ebdd;
+      --text: #38352b;
+      --muted: #6b6255;
+      --accent: #4f5f3c;
+      --hover: #8a4b32;
+      --rule: #d1c4ad;
+      --selection: #dce2ce;
+      --mono: ui-monospace, Menlo, Consolas, monospace;
+      --width: 39rem;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--background); color-scheme: light; }
+    body {
+      max-width: calc(var(--width) + 3rem);
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+      color: var(--text);
+      font: 1.125rem/1.7 Georgia, "Times New Roman", serif;
+      font-kerning: normal;
+      overflow-wrap: anywhere;
+    }
+    ::selection { background: var(--selection); color: var(--text); }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a[href^="mailto:"] { font-family: var(--mono); }
+    section > p a { font-weight: 700; }
+    a:hover { color: var(--hover); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .skip-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 0.25rem 0.5rem;
+      transform: translateY(-200%);
+      background: var(--background);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    header { padding-bottom: 1.5rem; border-bottom: 2px solid var(--accent); }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: -0.018em;
+    }
+    .subtitle { margin: 0 0 1.65rem; color: var(--muted); }
+    .profile-photo {
+      display: block;
+      width: 12rem;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+      margin: 0 0 1.65rem;
+      border-radius: 0.125rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.4rem;
+      font-family: var(--mono);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    nav a { padding: 0.3rem 0; }
+    section { margin-top: 3rem; scroll-margin-top: 2rem; }
+    h2 {
+      margin: 0 0 0.75rem;
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+    h3, h4 { margin: 0 0 0.3rem; font-size: 1em; font-weight: 700; line-height: 1.5; }
+    .research-section { margin-top: 2.25rem; }
+    .research-section:first-of-type { margin-top: 0; }
+    .research-subheading {
+      margin: 0 0 0.65rem;
+      color: var(--text);
+      font-size: 1.125em;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .people-list { margin: 0 0 1em; padding: 0; list-style: none; }
+    .people-list li + li { margin-top: 0.2em; }
+    .people-list a, a.quiet-link { font-weight: 400; }
+    .paper-count { color: var(--muted); white-space: nowrap; }
+    p { margin: 0 0 1em; }
+    section > :last-child { margin-bottom: 0; }
+    article + article { margin-top: 1.75rem; }
+    .meta { color: var(--muted); font-size: 1rem; line-height: 1.6; }
+    .reference { font-family: var(--mono); }
+    article p { margin: 0.35rem 0 0; }
+    address { font-style: normal; }
+    .contact-details {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 1.25rem 1.5rem;
+      margin: 0;
+    }
+    .contact-details dt { font-weight: 700; }
+    .contact-details dd { min-width: 0; margin: 0; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.9375rem;
+    }
+    @media (max-width: 36rem) {
+      body { padding: 2.5rem 1.25rem 2rem; font-size: 1.0625rem; }
+      h1 { font-size: 2.25rem; }
+      .profile-photo { width: 10rem; }
+      h2 { font-size: 1.375rem; }
+      section { margin-top: 2.625rem; }
+      .contact-details { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      .contact-details dt { margin-bottom: 0.3rem; }
+      .contact-details dd + dt { margin-top: 1.25rem; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <h1>Yannic Steenbeck</h1>
+    <p class="subtitle"><a href="mailto:yannic.steenbeck@tu-braunschweig.de">yannic.steenbeck@tu-braunschweig.de</a></p>
+    <img class="profile-photo"
+         src="picture.PNG"
+         alt=""
+         width="330" height="330"
+         decoding="async" referrerpolicy="no-referrer">
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About me</h2>
+      <p>
+        I am currently a PhD student at
+        <a href="https://www.tu-braunschweig.de/stochastik">TU Braunschweig</a>
+        in the research group <em>Stochastics and Applications</em>
+        under the supervision of
+        <a href="https://www.wias-berlin.de/people/jahnel/">Benedikt Jahnel</a>.
+      </p>
+    </section>
+
+    <section id="research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+      <section class="research-section" id="research-interests" aria-labelledby="research-interests-heading">
+        <h3 class="research-subheading" id="research-interests-heading">Research interests</h3>
+        <p>
+          Broadly speaking, my research interests fall under the heading
+          “random systems with interactions”.
+        </p>
+        <p>
+          For me, this often means studying physically motivated models
+          originating from statistical mechanics, mostly using techniques
+          at the interface of probability theory and analysis. In particular,
+          I am interested in interacting particle systems, stochastic analysis,
+          functional inequalities,
+          large deviation principles, concentration of measure, point
+          processes, random walks, and spectral theory.
+        </p>
+      </section>
+
+      <section class="research-section" id="publications" aria-labelledby="publications-heading">
+        <h3 class="research-subheading" id="publications-heading">Selected publications</h3>
+        <p>
+          All my articles are available on
+          <a href="https://arxiv.org/a/steenbeck_y_1.html">arXiv</a>.
+          A selection is listed below.
+        </p>
+        <!-- Selected papers appear in the chosen order, not by submission date. -->
+        <article>
+          <h4><a href="https://arxiv.org/abs/2609.07622">On the stationary measures of the critical Ornstein–Uhlenbeck process</a></h4>
+          <p class="meta">with Jean-Dominique Deuschel, Jonas Köppl, and Thomas Worschech.</p>
+          <p class="meta reference">2026, arXiv:2609.07622 (<a href="https://arxiv.org/pdf/2609.07622" aria-label="Read arXiv:2609.07622 as a PDF">PDF</a>)</p>
+        </article>
+        <article>
+          <h4><a href="https://arxiv.org/abs/2609.05735">Can one feel the existence of a non-trivial invariant measure?</a></h4>
+          <p class="meta reference">2026, arXiv:2609.05735 (<a href="https://arxiv.org/pdf/2609.05735" aria-label="Read arXiv:2609.05735 as a PDF">PDF</a>)</p>
+        </article>
+        <article>
+          <h4><a href="https://arxiv.org/abs/2608.13677">Asymptotically complete free-energy dissipation: a coarse MLSI holds at any positive temperature</a></h4>
+          <p class="meta">with Jonas Köppl.</p>
+          <p class="meta reference">2026, arXiv:2608.13677 (<a href="https://arxiv.org/pdf/2608.13677" aria-label="Read arXiv:2608.13677 as a PDF">PDF</a>)</p>
+        </article>
+        <article>
+          <h4><a href="https://arxiv.org/abs/2603.25479">Modified log-Sobolev inequalities, concentration bounds and uniqueness of Gibbs measures</a></h4>
+          <p class="meta reference">2026, arXiv:2603.25479 (<a href="https://arxiv.org/pdf/2603.25479" aria-label="Read arXiv:2603.25479 as a PDF">PDF</a>)</p>
+        </article>
+        <article>
+          <h4><a href="https://arxiv.org/abs/2602.13474">Reversible birth-and-death dynamics in continuum: a de Bruijn-type identity for free-energy dissipation</a></h4>
+          <p class="meta">with Benedikt Jahnel, Jonas Köppl, and Alexander Zass.</p>
+          <p class="meta reference">2026, arXiv:2602.13474 (<a href="https://arxiv.org/pdf/2602.13474" aria-label="Read arXiv:2602.13474 as a PDF">PDF</a>)</p>
+        </article>
+      </section>
+
+      <section class="research-section" id="collaborators" aria-labelledby="collaborators-heading">
+        <h3 class="research-subheading" id="collaborators-heading">Collaborators</h3>
+        <p>
+          I enjoy working in a team. Please <a class="quiet-link" href="#contact">get in touch</a>
+          if you are interested in collaborating.
+        </p>
+        <p>Past and present collaborators (number of joint papers):</p>
+        <ul class="people-list" role="list">
+          <li><a href="https://jonaskoeppl.github.io/">Jonas Köppl</a> <span class="paper-count">(5)</span></li>
+          <li><a href="https://www.wias-berlin.de/people/jahnel/">Benedikt Jahnel</a> <span class="paper-count">(4)</span></li>
+          <li><a href="https://www.alexzass.com/">Alexander Zass</a> <span class="paper-count">(3)</span></li>
+          <li><a href="https://www3.math.tu-berlin.de/stoch/SMCP/index.php%3Fid=46.html">Jean-Dominique Deuschel</a> <span class="paper-count">(1)</span></li>
+          <li><a href="https://sites.google.com/view/parthapratim/home">Partha Pratim Ghosh</a> <span class="paper-count">(1)</span></li>
+          <li>Thomas Worschech <span class="paper-count">(1)</span></li>
+        </ul>
+        <p>I also have papers in preparation with:</p>
+        <ul class="people-list" role="list">
+          <li><a href="https://www.tu-braunschweig.de/stochastik/team/andres">Sebastian Andres</a></li>
+          <li><a href="https://leokolesnikov.github.io/">Leonid Kolesnikov</a></li>
+          <li><a href="https://sites.google.com/view/chrisrenaud-chan">Christopher Renaud-Chan</a></li>
+          <li><a href="https://www.wim.uni-mannheim.de/doering/team/prof-dr-martin-slowik/">Martin Slowik</a></li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="teaching" aria-labelledby="teaching-heading">
+      <h2 id="teaching-heading">Teaching</h2>
+      <p>
+        Both before and during my PhD studies, I have assisted with teaching
+        introductory and advanced courses in analysis, probability theory,
+        stochastic processes, and financial mathematics for bachelor’s and
+        master’s students at
+        <a class="quiet-link" href="https://www.tu-braunschweig.de/stochastik">TU Braunschweig</a>.
+        Some of these courses were also aimed at students in data science,
+        engineering, education, and chemistry.
+      </p>
+      <p>
+        My responsibilities have included developing course exercises and
+        exam questions, discussing solutions at the blackboard, and
+        supervising student teaching assistants.
+      </p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact details</h2>
+      <address>
+        <dl class="contact-details">
+          <dt>Address</dt>
+          <dd>
+            TU Braunschweig<br>
+            Universitätsplatz 2<br>
+            38106 Braunschweig<br>
+            Germany
+          </dd>
+          <dt>E-mail address</dt>
+          <dd>
+            <a href="mailto:yannic.steenbeck@tu-braunschweig.de">yannic.steenbeck@tu-braunschweig.de</a>
+          </dd>
+        </dl>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
